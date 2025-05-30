@@ -23,6 +23,7 @@ body{
 #display{
     width: 80%;
     height: 10vh;
+    font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 4rem;
     border-radius: 5%;
@@ -40,6 +41,10 @@ body{
     
 }
 
+.numeric_btn:hover{
+    background-color: #A4CCD9;
+}
+
 #equals{
     height: 5rem;
     width: 10rem;
@@ -47,6 +52,10 @@ body{
     font-size: 2rem;
     border-radius: 10%;
     margin: 1rem;
+}
+
+#equals:hover{
+    background-color: #d7e0cf;
 }
 
 #clear{
@@ -58,11 +67,14 @@ body{
     margin: 1rem;
 }
 
+#clear:hover{
+background-color: #891515;
+}
+
 #btns{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    
     gap: 2rem; 
 }
 
@@ -78,6 +90,9 @@ body{
     margin: 1rem;
 }
 
+#operations button:hover{
+    background-color: #d7e0cf;
+}
 @media (max-width: 1024px) {
   #main {
     width: 90%;
