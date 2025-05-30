@@ -1,0 +1,174 @@
+body{
+
+    background-color: #A4CCD9;
+    text-align: center;
+   
+    
+}
+
+#main{
+    height: 80%;
+    width: 60%;
+    margin: auto;
+    background-color: #8DBCC7;
+    border-radius: 5%;
+    
+    
+}
+
+#numbers{
+    width: 80%;
+}
+
+#display{
+    width: 80%;
+    height: 10vh;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    border-radius: 5%;
+}
+
+
+
+.numeric_btn{
+    height: 5rem;
+    width: 10rem;
+    background-color: #C4E1E6;
+    font-size: 2rem;
+    border-radius: 10%;
+    margin: 1rem;
+    
+}
+
+#equals{
+    height: 5rem;
+    width: 10rem;
+    background-color: #EBFFD8;
+    font-size: 2rem;
+    border-radius: 10%;
+    margin: 1rem;
+}
+
+#clear{
+    height: 5rem;
+    width: 10rem;
+    background-color: #b22222;
+    font-size: 2rem;
+    border-radius: 10%;
+    margin: 1rem;
+}
+
+#btns{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+    gap: 2rem; 
+}
+
+
+
+#operations button{
+    display: block;
+    height: 5rem;
+    width: 10rem;
+    background-color: #EBFFD8;
+    font-size: 2rem;
+    border-radius: 10%;
+    margin: 1rem;
+}
+
+@media (max-width: 1024px) {
+  #main {
+    width: 90%;
+    border-radius: 3%;
+  }
+
+  #btns {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  #numbers,
+  #operations {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #numbers > div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .numeric_btn,
+  #equals,
+  #clear,
+  #operations button {
+    width: 25vw;
+    max-width: 100px;
+    height: 60px;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+  }
+
+  #display {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  #btns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    width: 90%;
+  }
+
+  #numbers > div {
+    all: unset;
+    display: contents;
+  }
+
+  #operations {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .numeric_btn,
+  #equals,
+  #clear,
+  #operations button {
+    width: 80px;
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  #display {
+    width: 90%;
+    font-size: 1.2rem;
+    height: 8vh;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+}
