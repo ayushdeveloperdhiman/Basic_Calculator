@@ -186,3 +186,42 @@ background-color: #891515;
     font-size: 1.4rem;
   }
 }
+
+#live-result {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  color: #004d00;
+}
+
+#history {
+  margin-top: 2rem;
+  background-color: #d9f2f2;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  max-height: 200px;
+  overflow-y: auto;
+  font-family: monospace;
+  box-shadow: inset 0 0 5px #ccc;
+  scrollbar-width: thin;           /* For Firefox */
+  scrollbar-color: #888 #e0f7f7;   /* For Firefox */
+}
+
+/* Optional: Scrollbar styling for WebKit (Chrome, Edge, Safari) */
+#history::-webkit-scrollbar {
+  width: 8px;
+}
+
+#history::-webkit-scrollbar-track {
+  background: #e0f7f7;
+  border-radius: 10px;
+}
+
+#history::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 2px solid #e0f7f7;
+}
